@@ -3,6 +3,15 @@ module Rich
     module Content
 
       class Group < Struct.new(:selector, :tag, :class_name, :key, :value, :add, :before_edit, :after_update)
+        class << self
+          def members
+            super.map(&:to_s)
+          end
+        end
+
+        def members
+          super.map(&:to_s)
+        end
 
         def self.build(selector, specs)
           self.new *{:selector => selector, :key => :key, :value => :value}.merge(specs).stringify_keys.values_at(*self.members)
