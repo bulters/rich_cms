@@ -4,7 +4,7 @@ module Rich
 
     def display
       (session[:rich_cms] ||= {})[:display] = params[:display]
-      request.xhr? ? render(:nothing => true) : redirect_to(request.referrer)
+      request.xhr? ? render(:nothing => true) : redirect_to(request.referrer || root_path)
     end
 
     def position
