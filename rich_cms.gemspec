@@ -240,14 +240,14 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<haml>, ["~> 3.0.25"])
+      s.add_runtime_dependency(%q<haml>, ["~> 3.1.3"])
       s.add_runtime_dependency(%q<jzip>, ["~> 1.0.11"])
     else
-      s.add_dependency(%q<haml>, ["~> 3.0.25"])
+      s.add_dependency(%q<haml>, ["~> 3.1.3"])
       s.add_dependency(%q<jzip>, ["~> 1.0.11"])
     end
   else
-    s.add_dependency(%q<haml>, ["~> 3.0.25"])
+    s.add_dependency(%q<haml>, ["~> 3.1.3"])
     s.add_dependency(%q<jzip>, ["~> 1.0.11"])
   end
 end
