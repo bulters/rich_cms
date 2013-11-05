@@ -1,7 +1,6 @@
 require "rake"
 require "rake/testtask"
-require "rake/rdoctask"
-require "test/integrator"
+require "rdoc/task"
 
 begin
   require "jeweler"

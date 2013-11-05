@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rich_cms}
+  s.name = "rich_cms"
   s.version = "3.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Paul Engel"]
-  s.date = %q{2011-02-07}
-  s.description = %q{Rich-CMS is a module of E9s (http://github.com/archan937/e9s) which provides a frontend for your CMS content. You can use this gem to manage CMS content or translations (in an internationalized application). The installation and setup process is very easily done. You will have to register content at the Rich-CMS engine and also you will have to specify the authentication mechanism. Both are one-liners.}
-  s.email = %q{paul.engel@holder.nl}
+  s.date = "2013-11-05"
+  s.description = "Rich-CMS is a module of E9s (http://github.com/archan937/e9s) which provides a frontend for your CMS content. You can use this gem to manage CMS content or translations (in an internationalized application). The installation and setup process is very easily done. You will have to register content at the Rich-CMS engine and also you will have to specify the authentication mechanism. Both are one-liners."
+  s.email = "paul.engel@holder.nl"
   s.extra_rdoc_files = [
     "README.textile"
   ]
@@ -159,10 +159,6 @@ Gem::Specification.new do |s|
     "test/rails-2/dummy/script/plugin",
     "test/rails-2/dummy/script/runner",
     "test/rails-2/dummy/script/server",
-    "test/rails-2/dummy/test/fixtures/authlogic_users.yml",
-    "test/rails-2/dummy/test/fixtures/devise_users.yml",
-    "test/rails-2/pending.rb",
-    "test/rails-2/test_helper.rb",
     "test/rails-3/dummy/.bundle/config",
     "test/rails-3/dummy/Gemfile",
     "test/rails-3/dummy/Gemfile.lock",
@@ -201,12 +197,8 @@ Gem::Specification.new do |s|
     "test/rails-3/dummy/public/javascripts/jquery/ui/rich_cms/widget.js",
     "test/rails-3/dummy/public/javascripts/rich_cms.js",
     "test/rails-3/dummy/script/rails",
-    "test/rails-3/dummy/test/fixtures/authlogic_users.yml",
-    "test/rails-3/dummy/test/fixtures/devise_users.yml",
-    "test/rails-3/test_helper.rb",
     "test/shared/dummy/db/schema.rb",
     "test/shared/dummy/db/seeds.rb",
-    "test/shared/dummy/fixtures/authlogic_users.yml",
     "test/shared/dummy/models/authlogic_user.rb",
     "test/shared/dummy/models/authlogic_user_session.rb",
     "test/shared/dummy/models/cms_content.rb",
@@ -215,105 +207,40 @@ Gem::Specification.new do |s|
     "test/shared/dummy/stylesheets/rich_cms.css",
     "test/shared/dummy/views/application/index.html.erb",
     "test/shared/dummy/views/layouts/application.html.erb",
-    "test/shared/support/action_controller/integration.rb",
-    "test/shared/support/action_controller/test_case.rb",
-    "test/shared/support/capybara/setup.rb",
-    "test/shared/support/test_helper.rb",
-    "test/shared/tests/actionpack/action_controller/base_test.rb",
-    "test/shared/tests/actionpack/action_view/base_test.rb",
-    "test/shared/tests/activesupport/active_support/dependencies_test.rb",
-    "test/shared/tests/app/integration/authenticated/authlogic.rb",
-    "test/shared/tests/app/integration/authenticated/devise_test.rb",
-    "test/shared/tests/app/integration/non_authenticated.rb",
-    "test/shared/tests/app/routing_test.rb",
-    "test/shared/tests/auth_test.rb",
-    "test/shared/tests/content/group.rb",
-    "test/shared/tests/content/item.rb",
-    "test/shared/tests/core/string/html_safe.rb",
-    "test/shared/tests/dummy_app.rb",
-    "test/shared/tests/engine_test.rb",
-    "test/shared/tests/rails/engine_test.rb",
-    "test/shared/tests/readme_test.rb",
+    "test/shared/tests/fixtures/authlogic_users.yml",
+    "test/shared/tests/fixtures/devise_users/rails-2.yml",
+    "test/shared/tests/fixtures/devise_users/rails-3.yml",
+    "test/shared/tests/integration/authenticated/authlogic.rb",
+    "test/shared/tests/integration/authenticated/devise_test.rb",
+    "test/shared/tests/integration/non_authenticated.rb",
+    "test/shared/tests/integration/routing_test.rb",
+    "test/shared/tests/support/action_controller/integration_test.rb",
+    "test/shared/tests/support/action_controller/test_case.rb",
+    "test/shared/tests/support/dummy_app.rb",
+    "test/shared/tests/support/pending.rb",
+    "test/shared/tests/test_helper.rb",
+    "test/shared/tests/unit/actionpack/action_controller/base_test.rb",
+    "test/shared/tests/unit/actionpack/action_view/base_test.rb",
+    "test/shared/tests/unit/activesupport/active_support/dependencies_test.rb",
+    "test/shared/tests/unit/auth_test.rb",
+    "test/shared/tests/unit/content/group_test.rb",
+    "test/shared/tests/unit/content/item_test.rb",
+    "test/shared/tests/unit/core/string/html_safe_test.rb",
+    "test/shared/tests/unit/engine_test.rb",
+    "test/shared/tests/unit/rails/engine_test.rb",
+    "test/shared/tests/unit/readme_test.rb",
     "uninstall.rb"
   ]
-  s.homepage = %q{http://codehero.es/rails_gems_plugins/rich_cms}
+  s.homepage = "http://codehero.es/rails_gems_plugins/rich_cms"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.0}
-  s.summary = %q{Enrichments (e9s) module for a pluggable CMS frontend}
-  s.test_files = [
-    "test/integrator.rb",
-    "test/rails-2/dummy/app/controllers/application_controller.rb",
-    "test/rails-2/dummy/app/helpers/application_helper.rb",
-    "test/rails-2/dummy/config/boot.rb",
-    "test/rails-2/dummy/config/environment.rb",
-    "test/rails-2/dummy/config/environments/development.rb",
-    "test/rails-2/dummy/config/environments/production.rb",
-    "test/rails-2/dummy/config/environments/test.rb",
-    "test/rails-2/dummy/config/initializers/backtrace_silencers.rb",
-    "test/rails-2/dummy/config/initializers/cookie_verification_secret.rb",
-    "test/rails-2/dummy/config/initializers/devise.rb",
-    "test/rails-2/dummy/config/initializers/enrichments.rb",
-    "test/rails-2/dummy/config/initializers/inflections.rb",
-    "test/rails-2/dummy/config/initializers/mime_types.rb",
-    "test/rails-2/dummy/config/initializers/new_rails_defaults.rb",
-    "test/rails-2/dummy/config/initializers/session_store.rb",
-    "test/rails-2/dummy/config/preinitializer.rb",
-    "test/rails-2/dummy/config/routes.rb",
-    "test/rails-2/dummy/db/schema.rb",
-    "test/rails-2/dummy/db/seeds.rb",
-    "test/rails-2/pending.rb",
-    "test/rails-2/test_helper.rb",
-    "test/rails-3/dummy/app/controllers/application_controller.rb",
-    "test/rails-3/dummy/app/helpers/application_helper.rb",
-    "test/rails-3/dummy/config/application.rb",
-    "test/rails-3/dummy/config/boot.rb",
-    "test/rails-3/dummy/config/environment.rb",
-    "test/rails-3/dummy/config/environments/development.rb",
-    "test/rails-3/dummy/config/environments/production.rb",
-    "test/rails-3/dummy/config/environments/test.rb",
-    "test/rails-3/dummy/config/initializers/backtrace_silencers.rb",
-    "test/rails-3/dummy/config/initializers/devise.rb",
-    "test/rails-3/dummy/config/initializers/enrichments.rb",
-    "test/rails-3/dummy/config/initializers/inflections.rb",
-    "test/rails-3/dummy/config/initializers/mime_types.rb",
-    "test/rails-3/dummy/config/initializers/secret_token.rb",
-    "test/rails-3/dummy/config/initializers/session_store.rb",
-    "test/rails-3/dummy/config/routes.rb",
-    "test/rails-3/dummy/db/schema.rb",
-    "test/rails-3/dummy/db/seeds.rb",
-    "test/rails-3/test_helper.rb",
-    "test/shared/dummy/db/schema.rb",
-    "test/shared/dummy/db/seeds.rb",
-    "test/shared/dummy/models/authlogic_user.rb",
-    "test/shared/dummy/models/authlogic_user_session.rb",
-    "test/shared/dummy/models/cms_content.rb",
-    "test/shared/dummy/models/devise_user.rb",
-    "test/shared/support/action_controller/integration.rb",
-    "test/shared/support/action_controller/test_case.rb",
-    "test/shared/support/capybara/setup.rb",
-    "test/shared/support/test_helper.rb",
-    "test/shared/tests/actionpack/action_controller/base_test.rb",
-    "test/shared/tests/actionpack/action_view/base_test.rb",
-    "test/shared/tests/activesupport/active_support/dependencies_test.rb",
-    "test/shared/tests/app/integration/authenticated/authlogic.rb",
-    "test/shared/tests/app/integration/authenticated/devise_test.rb",
-    "test/shared/tests/app/integration/non_authenticated.rb",
-    "test/shared/tests/app/routing_test.rb",
-    "test/shared/tests/auth_test.rb",
-    "test/shared/tests/content/group.rb",
-    "test/shared/tests/content/item.rb",
-    "test/shared/tests/core/string/html_safe.rb",
-    "test/shared/tests/dummy_app.rb",
-    "test/shared/tests/engine_test.rb",
-    "test/shared/tests/rails/engine_test.rb",
-    "test/shared/tests/readme_test.rb"
-  ]
+  s.rubygems_version = "2.0.3"
+  s.summary = "Enrichments (e9s) module for a pluggable CMS frontend"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<haml>, ["~> 3.1.4"])
+      s.add_runtime_dependency(%q<haml>, ["~> 3.0.25"])
       s.add_runtime_dependency(%q<jzip>, ["~> 1.0.11"])
     else
       s.add_dependency(%q<haml>, ["~> 3.0.25"])
